@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anton Liu's Resume</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css">
+    <style>
+        body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding: 15px;
+            }
+        }
+
+        /* 讓列印變成 A4 完美格式 */
+        @media print {
+            body {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            @page {
+                margin: 1.5cm;
+            }
+        }
+    </style>
+</head>
+
+<body class="markdown-body">
+    <div id="content"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        // 這裡是你的履歷內容區，之後我們只要改這裡就好
+        const markdownContent = `
+# Anton Liu (劉胤檀)
+> 資深產品經理 | 熱愛遊戲 | 數據驅動
+
+- **Email:** YTAnton@outlook.com
+- **電話:** +886 988 260 518
+- **地點:** 台北, 台灣
+
+---
+
+## 專業摘要
+擁有 10 年以上經驗的資深產品經理，從桌遊設計跨界軟體開發。擅長將複雜邏輯轉化為清晰規格，曾帶領 11 人團隊在 2 個月內完成平台從 0 到 1 上線。
+
+## 工作經歷
+### 產品經理 | 順為信息有限公司
+*2024/03 - 至今*
+- 規劃影音社群通訊軟體，主導 Mobile Web 與紅包系統優化。
+- 帶領 13 人跨職能團隊（前後端、設計、測試）。
+
+### 專案經理 | 我愛數位科技
+*2022/07 - 2023/12*
+- 導入敏捷開發 (Scrum)，提升團隊交付效率。
+- 負責區塊鏈影音分享平台與 NFT 交易市集之規劃。
+        `;
+
+        // 把 Markdown 變成 HTML 顯示出來
+        document.getElementById('content').innerHTML = marked.parse(markdownContent);
+    </script>
+</body>
+
+</html>
