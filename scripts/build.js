@@ -135,13 +135,13 @@ async function build() {
             if (!data) return '';
 
             return `
-            <div id="content-${lang}" class="grid grid-cols-12 h-full flex-grow lang-section transition-opacity duration-300 ${isHidden ? 'hidden opacity-0' : 'opacity-100'}">
+            <div id="content-${lang}" class="grid grid-cols-1 lg:grid-cols-12 h-full flex-grow lang-section transition-opacity duration-300 ${isHidden ? 'hidden opacity-0' : 'opacity-100'} print:grid-cols-12">
                 
                 <!-- LEFT COLUMN (Main Content): Col-8 -->
-                <div class="col-span-8 flex flex-col">
+                <div class="col-span-12 lg:col-span-8 flex flex-col print:col-span-8">
                     
                     <!-- HEADER LEFT -->
-                    <header class="p-12 pb-8 pr-8 border-b border-gray-100 relative z-10">
+                    <header class="p-6 lg:p-12 lg:pb-8 lg:pr-8 border-b border-gray-100 relative z-10 print:p-12 print:pb-8 print:pr-8">
                         <h1 class="text-4xl font-black text-slate-800 tracking-tight mb-2 leading-tight">
                             ${data.primaryName} 
                             ${data.secondaryName ? `<br class="hidden print:block"><span class="text-xl font-light text-slate-400 align-middle">${data.secondaryName}</span>` : ''}
@@ -156,7 +156,7 @@ async function build() {
                     </header>
     
                     <!-- BODY LEFT (Work) -->
-                    <div class="p-12 pr-8 pt-8 flex-grow">
+                    <div class="p-6 pr-6 lg:p-12 lg:pr-8 lg:pt-8 flex-grow print:p-12 print:pr-8 print:pt-8">
                         <section>
                             <div class="flex items-center gap-3 mb-8">
                                 <div class="w-8 h-1 bg-slate-800"></div>
@@ -171,10 +171,10 @@ async function build() {
                 </div>
     
                 <!-- RIGHT COLUMN (Sidebar): Col-4 -->
-                <div class="col-span-4 bg-slate-50 border-l border-slate-100 flex flex-col">
+                <div class="col-span-12 lg:col-span-4 bg-slate-50 border-t lg:border-t-0 lg:border-l border-slate-100 flex flex-col print:col-span-4 print:border-t-0 print:border-l">
                     
                     <!-- HEADER RIGHT (Traits) -->
-                    <div class="p-12 pl-8 pt-12 pb-8 border-b border-gray-200/50 bg-slate-100/50">
+                    <div class="p-6 lg:p-12 lg:pl-8 lg:pt-12 lg:pb-8 border-b border-gray-200/50 bg-slate-100/50 print:p-12 print:pl-8 print:pt-12 print:pb-8">
                             <!-- Traits (Using raw content from MD, assuming it's a list) -->
                             <!-- Re-styling check: Original used manual map. 
                                  For i18n, we should parse the UL/LI from traitsContent and style it. -->
@@ -184,7 +184,7 @@ async function build() {
                     </div>
     
                     <!-- BODY RIGHT (Skills & Edu) -->
-                    <div class="p-12 pl-8 pt-8 flex-grow">
+                    <div class="p-6 lg:p-12 lg:pl-8 lg:pt-8 flex-grow print:p-12 print:pl-8 print:pt-8">
                             <section class="mb-12">
                                 <div class="flex items-center gap-3 mb-6">
                                 <div class="w-6 h-1 bg-slate-400"></div>
@@ -227,8 +227,8 @@ async function build() {
         .opacity-100 { opacity: 1; }
     </style>
 </head>
-<body class="py-10 px-4 print:py-0 print:px-0">
-    <div class="cv-container max-w-5xl mx-auto bg-white shadow-xl relative overflow-hidden flex flex-col min-h-[1123px]">
+<body class="py-0 px-0 lg:py-10 lg:px-4 print:py-0 print:px-0">
+    <div class="cv-container w-full max-w-5xl mx-auto bg-white shadow-xl relative overflow-hidden flex flex-col min-h-screen lg:min-h-[1123px]">
         
         <!-- Language Content Blocks -->
         ${renderBody(zhData, 'zh', false)}

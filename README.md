@@ -21,3 +21,6 @@ This project generates a professional, high-design HTML resume from a simple Mar
 - **Auto-Formatting**: Automatically styles headers, lists, and dates.
 - **Clean Design**: Optimized for readability and "Director-level" impact.
 - **Print Ready**: CSS tuned for perfect PDF export.
+
+
+node scripts/build.js
