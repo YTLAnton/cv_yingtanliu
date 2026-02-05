@@ -65,8 +65,10 @@
   - 與客戶及各部門進行需求訪談與溝通。
   - 研究、規劃與設計平台之前後端功能、系統以及 UI/UX。
 - **核心成就**:
-  - 負責模組：**KYC 引導、二代報表、帳戶安全、金流相關需求**。
-  - 規劃並導入 **虛擬貨幣出入款系統與流程**。
+  - **金流與區塊鏈 (Fintech & Crypto)**：主導 **USDT 出入金金流** 與 **虛擬貨幣錢配出款綁定流程**，確保高額資金往來之安全性與高度自動化。
+  - **架構設計 (Systems Architecture)**：規劃 **多語系框架 (Multi-language Framework)** 與 **二代智慧報表系統**，提升平台全球佈局速度與數據決策效率。
+  - **技術決策與分發**：導入 **iOS 超級簽 (Super Signature)** 方案，有效解決 App Store 分發限制與簽名失效痛點。
+  - **系統穩定度與優化**：深度修復生產環境各產線問題（包含網絡鏈路異常、輸入法相容性、三方連結判定等），降低 20% 以上的系統未知錯誤率。
 
 ### 產品經理 | 馬紹爾群島商彩虹科技股份有限公司
 *2019/11 ~ 2021/01*
@@ -186,8 +188,10 @@
   - Conducted requirement interviews with clients and departments.
   - Researched, planned, and designed platform functions, systems, and UI/UX.
 - **Core Achievements**:
-  - Modules: **KYC Onboarding, Gen-2 Reporting, Account Security, Payment/Cashflow Requirements**.
-  - Planned and implemented **Crypto Deposit/Withdrawal Systems & Flows**.
+  - **Fintech & Crypto Implementation**: Designed and launched **USDT deposit/withdrawal systems** and **crypto wallet binding flows**, ensuring transaction security and automation for high-volume cashflows.
+  - **Architectural Scalability**: Spearheaded the development of a **Multi-language Framework** and **Gen-2 Smart Reporting System**, enhancing global scalability and data-driven efficiency.
+  - **App Distribution Strategy**: Implemented **iOS Super Signature** solutions to circumvent App Store distribution constraints and ensure persistent app availability.
+  - **System Reliability & Troubleshooting**: Led deep-dive investigations into complex production issues (network anomalies, IME compatibility, 3rd-party validation), reducing system failure rates significantly.
 
 ### Product Manager | Rainbow Technology Co., Ltd. (Marshall Islands)
 *2019/11 ~ 2021/01*
