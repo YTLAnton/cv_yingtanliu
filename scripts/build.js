@@ -365,7 +365,7 @@ async function build() {
                         <head>
                             <meta charset="UTF-8">
                                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                    <title>${zhData.primaryName} - CV</title>
+                                    <title>${zhData.ogTitle}</title>
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="${zhData.ogTitle}" />
