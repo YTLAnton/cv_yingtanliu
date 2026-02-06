@@ -8,6 +8,11 @@ marked.setOptions({
     gfm: true
 });
 
+/**
+ * Main build function to generate the bilingual CV HTML.
+ * Reads markdown, parses sections, and produces a responsive HTML file.
+ * @returns {Promise<void>}
+ */
 async function build() {
     try {
         const mdPath = path.join(__dirname, '../resume.md');
@@ -21,24 +26,111 @@ async function build() {
         const zhMarkdown = parts[0] || '';
         const enMarkdown = parts[1] || ''; // If no split found, dry run with empty
 
-        // Helper to process a single language markdown into HTML variables
+        /**
+         * @typedef {Object} SectionData
+         * @property {string} primaryName - Main display name.
+         * @property {string} secondaryName - Secondary/translated name.
+         * @property {string} summaryContent - Professional summary HTML.
+         * @property {string} contactHtml - Contact info HTML.
+         * @property {string} traitsContent - Characteristics section HTML.
+         * @property {string} skillsContent - Skills list HTML.
+         * @property {string} workContent - Work experience HTML.
+         * @property {string} educationContent - Education HTML.
+         * @property {string} marginClass - CSS class for print margins.
+         */
+
+        /**
+         * Helper to process a single language markdown into HTML variables using AST
+         * @param {string} mdContent - Raw markdown content for a specific language
+         * @param {string} langCode - Language code ('zh' or 'en')
+         * @returns {SectionData|null} Processed data object or null if content empty
+         */
         function processLanguage(mdContent, langCode) {
             if (!mdContent.trim()) return null;
 
-            // Convert MD to HTML
-            const htmlBody = marked.parse(mdContent);
+            // 1. AST Parsing
+            const tokens = marked.lexer(mdContent);
 
-            // Structure: Header[0] --- Contact[1] --- Traits[2] --- Skills[3] --- Work[4] --- Education[5]
-            const sections = htmlBody.split('<hr>');
+            // 2. Group Tokens by Header
+            const sections = {};
+            let currentSection = 'header'; // Default section (before first header)
+            sections[currentSection] = [];
 
-            // Helper to strip H1/H2 tags
-            const stripTitles = (html) => html ? html.replace(/<h[12].*?>.*?<\/h[12]>\s*/g, '') : '';
+            tokens.forEach(token => {
+                if (token.type === 'heading' && (token.depth === 1 || token.depth === 2)) {
+                    // Use the header text as the key (normalized)
+                    currentSection = token.text.trim();
+                    sections[currentSection] = [];
+                } else {
+                    sections[currentSection].push(token);
+                }
+            });
 
-            // Extract Name/Title
-            const titleMatch = mdContent.match(/^#\s+(.+)$/m);
-            const fullTitle = titleMatch ? titleMatch[1].trim() : '劉胤檀 Anton Liu';
+            // Helper to render tokens back to HTML
+            const renderTokens = (tokenList) => {
+                if (!tokenList || tokenList.length === 0) return '';
+                // marked.parser takes a list of tokens
+                // We need to wrap it in a "Links" context if needed, but usually direct is fine
+                // Hack: marked.parser expects `this.tokens.links` if strict, but let's try basic static parse
+                return marked.parser(tokenList);
+            };
 
-            // Special Name Processing for ZH (Anton's specific preference)
+            // 3. Extract Specific Sections (Robust Matching)
+
+            // --- Header Analysis (Name, Title, Contact) ---
+            const headerTokens = sections['header'] || [];
+
+            // Find H1 for Name
+            const nameToken = tokens.find(t => t.type === 'heading' && t.depth === 1);
+            const fullTitle = nameToken ? nameToken.text : '劉胤檀 Anton Liu';
+
+            // Find Blockquote for Summary
+            const summaryToken = headerTokens.find(t => t.type === 'blockquote');
+            const summaryContent = summaryToken ? marked.parser(summaryToken.tokens) : '';
+
+            // Find Contact Info (Assume it's the first List in 'header' or 'Contact'/'聯絡資訊' section)
+            // Strategy: Look in 'header' first, then look for explicit 'Contact' related sections
+            let contactTokens = headerTokens.find(t => t.type === 'list');
+
+            // If not in header (implicit), check explicit sections
+            const contactKeys = Object.keys(sections).find(k => /contact|聯絡/i.test(k));
+            if (!contactTokens && contactKeys) {
+                contactTokens = sections[contactKeys].find(t => t.type === 'list');
+            }
+
+            const contactHtml = contactTokens ? contactTokens.items.map(item => {
+                // Manually parse list item text to add icons
+                let text = item.text.trim();
+
+                // Icon Logic
+                let icon = '📌';
+                if (text.includes('988') || text.includes('Phone') || text.includes('電話')) icon = '📱';
+                if (text.includes('@') || text.includes('Email') || text.includes('mailto')) icon = '✉️';
+                if (text.includes('1990') || text.includes('Birthday') || text.includes('生日') || text.includes('DOB')) icon = '📅';
+
+                // Strip bold/strong labels if present
+                // Regex to remove "**Label**: " prefix
+                const cleanText = text.replace(/^\*\*.*?\*\*[:：]\s*/, '').replace(/<a/g, '<a class="hover:text-slate-800 transition-colors"');
+
+                return `<span class="flex items-center gap-1.5"><span class="text-slate-900">${icon}</span> ${marked.parseInline(cleanText)}</span>`;
+            }).join('\n') : '';
+
+
+            // --- Section Analysis ---
+
+            // Helper to find section by fuzzy name
+            const findSectionHtml = (keywords) => {
+                const key = Object.keys(sections).find(k => keywords.some(w => k.toLowerCase().includes(w.toLowerCase())));
+                return key ? renderTokens(sections[key]) : '';
+            };
+
+            const traitsHtml = findSectionHtml(['Trait', '特質']);
+            const skillsHtml = findSectionHtml(['Skill', '技能', '專業']);
+            const workHtml = findSectionHtml(['Work', 'Experience', '經歷', '履歷']);
+            const educationHtml = findSectionHtml(['Education', '學歷']);
+
+
+            // --- Name Processing ---
             let primaryName = fullTitle;
             let secondaryName = '';
 
@@ -49,57 +141,9 @@ async function build() {
                 if (secondaryName.includes(') ')) {
                     secondaryName = secondaryName.replace(') ', ')&nbsp;&nbsp;&nbsp;');
                 }
-            } else {
-                // English Name Processing (Simplistic for now, or customize if needed)
-                // Keeping it full line for EN header usually looks better, or split same way
-                // EN: "Anton (Ying-Tan) Liu"
-                primaryName = fullTitle;
             }
 
-            // Extract Summary (from Header section 0)
-            const headerRaw = sections[0] || '';
-            const summaryMatch = headerRaw.match(/<blockquote>([\s\S]*?)<\/blockquote>/);
-            const summaryContent = summaryMatch ? summaryMatch[1] : '';
-
-            // Extract Sections
-            // 0: Header (Name/Summary) - Handled above
-            // 1: Contact
-            // 2: Traits (Key Attributes)
-            // 3: Skills
-            // 4: Work Experience
-            // 5: Education
-
-            // Note: Section indices depend heavily on the exact number of <hr> tags.
-            // If EN version has same structure, indices match.
-
-            const contactRaw = sections[1] || ''; // Extract phone/email/dob from list
-            // Simple parsing for contact info to put in header
-            // Looking for list items: <li>...</li>
-            const contactItems = contactRaw.match(/<li>(.*?)<\/li>/g) || [];
-            const contactHtml = contactItems.map(item => {
-                // Add icons if missing (naive check)
-                let text = item.replace(/<\/?li>/g, '').trim();
-                // This part relies on specific markdown formatting. 
-                // For robustness, we might just dump the contactRaw into the sidebar or header.
-                // But the original design put it in header gap-x-6.
-                // Let's regenerate semantic HTML for header contacts from the raw list items if possible
-                // Or just pass the raw html if it fits.
-
-                // Reuse existing icons based on text content keywords?
-                let icon = '📌';
-                if (text.includes('988') || text.includes('Phone') || text.includes('電話')) icon = '📱';
-                if (text.includes('@') || text.includes('Email')) icon = '✉️';
-                if (text.includes('1990') || text.includes('Birthday') || text.includes('生日') || text.includes('DOB')) icon = '📅';
-
-                // Strip bolding ** key ** if present for cleaner icon pairing?
-                // Strip label (<strong>Key</strong>: ) to keep only value
-                const cleanText = text.replace(/<strong>.*?<\/strong>:?\s*/, '');
-                return `<span class="flex items-center gap-1.5"><span class="text-slate-900">${icon}</span> ${cleanText}</span>`;
-            }).join('\n');
-
-
-            // 1.5cm is approx 56px. Using Tailwinds' nearest common value or custom.
-            // 1.5cm = 0.59in = 56.7px. Let's use custom 56px for accuracy.
+            // 1.5cm margin class
             const marginClass = 'p-[1.5cm]';
 
             return {
@@ -107,10 +151,10 @@ async function build() {
                 secondaryName,
                 summaryContent,
                 contactHtml,
-                traitsContent: stripTitles(sections[2] || ''),
-                skillsContent: stripTitles(sections[3] || ''),
-                workContent: stripTitles(sections[4] || ''),
-                educationContent: stripTitles(sections[5] || ''),
+                traitsContent: traitsHtml,
+                skillsContent: skillsHtml,
+                workContent: workHtml,
+                educationContent: educationHtml,
                 marginClass
             };
         }
@@ -137,6 +181,13 @@ async function build() {
         };
 
         // Render Function for a specific language block
+        /**
+         * Generates the HTML structure for a language section.
+         * @param {SectionData} data - Processed section data.
+         * @param {string} lang - Language code ('zh' or 'en').
+         * @param {boolean} isHidden - Whether this section should be hidden initially.
+         * @returns {string} HTML string.
+         */
         function renderBody(data, lang, isHidden) {
             if (!data) return '';
 
@@ -152,9 +203,13 @@ async function build() {
                     <header class="order-1 lg:order-none col-span-1 ${data.marginClass} lg:pb-8 lg:pr-8 border-b border-gray-100 relative z-10 print:px-4 print:py-4 bg-white lg:bg-transparent">
                         <h1 class="text-4xl font-black text-slate-800 tracking-tight mb-2 leading-tight">
                             ${data.primaryName}
-                            ${data.secondaryName ? `<br class="hidden print:block"><span class="text-xl font-light text-slate-400 align-middle">${data.secondaryName}</span>` : ''}
+                            ${data.secondaryName ? `<br class="hidden print:block"><span class="text-2xl font-light text-slate-400 align-middle">${data.secondaryName}</span>` : ''}
                         </h1>
-                        <div class="text-base text-slate-600 leading-relaxed mb-6 mt-4 border-l-4 border-slate-800 pl-4 py-1 italic bg-slate-50 rounded-r">
+                        
+                        <!-- Separator Line (Restored) -->
+                        <div class="w-full h-0.5 bg-slate-800 mt-4 mb-6"></div>
+
+                        <div class="text-base text-slate-600 leading-relaxed mb-6">
                             ${data.summaryContent}
                         </div>
 

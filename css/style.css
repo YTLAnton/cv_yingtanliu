@@ -109,26 +109,28 @@ body {
 }
 
 @media print {
+
+    /* Utility Hiding - Keep !important for safety */
     .no-print {
-        display: none;
+        display: none !important;
     }
 
+    /* Layout Resets - load order ensures override without !important */
     html,
     body,
     .cv-container {
-        height: auto !important;
-        min-height: 0 !important;
+        height: auto;
+        min-height: 0;
         background: white;
-        overflow: visible !important;
+        overflow: visible;
     }
 
-    /* Force background colors print */
+    /* Color Enforcement - Browsers require !important to override user settings */
     * {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
 
-    /* Page Break Controls */
     /* Page Break Controls */
     section {
         break-inside: auto;
@@ -138,8 +140,7 @@ body {
         break-inside: auto;
     }
 
-    /* Only prevent breaking inside list items that don't contain sub-lists (leaf nodes) */
-    /* This ensures large nested lists can flow across pages, but individual bullets stay intact */
+    /* Prevent breaking inside leaf nodes */
     .markdown-content li:not(:has(ul)),
     .markdown-content p {
         break-inside: avoid;
@@ -151,19 +152,19 @@ body {
         break-before: auto;
     }
 
-    /* Tighten lists in print to save space */
+    /* Compact Spacing for Print */
     .markdown-content ul {
-        margin-bottom: 0.75rem !important;
+        margin-bottom: 0.75rem;
     }
 
     .markdown-content li {
-        margin-bottom: 0.15rem !important;
+        margin-bottom: 0.15rem;
     }
 
-    /* Prevent large gaps by ensuring containers don't force stretch */
+    /* Layout Overrides */
     .flex-grow,
     .h-full {
-        height: auto !important;
-        flex-grow: 0 !important;
+        height: auto;
+        flex-grow: 0;
     }
 }

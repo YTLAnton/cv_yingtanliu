@@ -9,7 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const controlsContainer = document.getElementById('i18n-controls');
 
     // 1. Detect Preference
-    const savedLang = localStorage.getItem(LANG_KEY);
+    let savedLang = null;
+    try {
+        savedLang = localStorage.getItem(LANG_KEY);
+    } catch (e) {
+        console.warn('[i18n] Storage access blocked:', e);
+    }
+
     // Detect browser language (e.g., "en-US" -> "en")
     const browserLang = navigator.language.toLowerCase().startsWith('en') ? 'en' : 'zh';
 
@@ -43,10 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
         contentEn.classList.add('opacity-100');
     }
 
+    /**
+     * Switches the active language and persists preference.
+     * @param {string} targetLang - Target language code ('zh' or 'en').
+     */
     function switchLanguage(targetLang) {
         if (currentLang === targetLang) return;
         currentLang = targetLang;
-        localStorage.setItem(LANG_KEY, targetLang);
+
+        try {
+            localStorage.setItem(LANG_KEY, targetLang);
+        } catch (e) {
+            // Ignore storage errors
+        }
 
         // Animation Logic
         const outgoing = targetLang === 'en' ? contentZh : contentEn;
@@ -72,6 +87,9 @@ document.addEventListener('DOMContentLoaded', () => {
         renderButton();
     }
 
+    /**
+     * Renders the floating action button for language switching.
+     */
     function renderButton() {
         if (!controlsContainer) return;
 
