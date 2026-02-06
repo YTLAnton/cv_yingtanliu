@@ -108,8 +108,8 @@ async function build() {
             // --- Meta Section Analysis (New) ---
             const metaHtml = findSectionHtml(['Meta']); // Although we don't render it directly, we parse it
             const metaTokens = sections['Meta'] || [];
-            let ogTitle = "Anton Liu - Resume";
-            let ogDesc = "Interactive Bilingual Resume";
+            let ogTitle = "";
+            let ogDesc = "";
             let ogImage = "";
 
             const metaList = metaTokens.find(t => t.type === 'list');
@@ -206,6 +206,10 @@ async function build() {
 
             // 1.5cm margin class
             const marginClass = 'p-[1.5cm]';
+
+            // Fallback for Meta
+            if (!ogTitle) ogTitle = `${primaryName} - Resume`;
+            if (!ogDesc) ogDesc = "Interactive Bilingual Resume";
 
             return {
                 primaryName,
