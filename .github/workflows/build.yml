@@ -21,7 +21,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install fs-extra marked
+        run: npm install fs-extra marked@4
 
       - name: Run build script
         # 這裡根據你的截圖，指定去 scripts 資料夾執行
