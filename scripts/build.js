@@ -101,9 +101,16 @@ async function build() {
             const nameToken = tokens.find(t => t.type === 'heading' && t.depth === 1);
             const fullTitle = nameToken ? nameToken.text.trim() : '劉胤檀 (Ying-Tan Liu) Anton Liu';
 
-            // Find Blockquote for Summary
-            const summaryToken = headerTokens.find(t => t.type === 'blockquote');
-            const summaryContent = summaryToken ? marked.parser(summaryToken.tokens) : '';
+                        // --- 強化摘要抓取邏輯 ---
+            // 1. 優先搜尋標題為「摘要」或「Summary」的獨立區塊
+            const summaryHtml = findSectionHtml(['Summary', '摘要', '簡介']);
+            
+            // 2. 備案：如果在獨立區塊找不到，則尋找 header 區塊中的第一個 blockquote
+            let summaryContent = summaryHtml;
+            if (!summaryContent) {
+                const summaryToken = headerTokens.find(t => t.type === 'blockquote');
+                summaryContent = summaryToken ? marked.parser(summaryToken.tokens) : '';
+            }
 
             // --- Meta Section Analysis (New) ---
             const metaHtml = findSectionHtml(['Meta']); // Although we don't render it directly, we parse it
