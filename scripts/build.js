@@ -81,15 +81,39 @@ async function build() {
                     });
             };
 
+            const renderSectionWithGrouping = (tokenList) => {
+                if (!tokenList || tokenList.length === 0) return '';
+                const groups = [];
+                let currentGroup = [];
+
+                tokenList.forEach(token => {
+                    // Check if it's a "Entry Header" (H3)
+                    if (token.type === 'heading' && token.depth === 3) {
+                        if (currentGroup.length > 0) {
+                            groups.push(currentGroup);
+                        }
+                        currentGroup = [token];
+                    } else {
+                        currentGroup.push(token);
+                    }
+                });
+                if (currentGroup.length > 0) groups.push(currentGroup);
+
+                return groups.map(group => {
+                    return `<div class="break-inside-avoid relative">${renderTokens(group)}</div>`;
+                }).join('\n');
+            };
+
             // Helper to find section by fuzzy name
-            const findSectionHtml = (keywords) => {
+            const findSectionHtml = (keywords, useGrouping = false) => {
                 const key = Object.keys(sections).find(k => {
                     const lowerK = k.toLowerCase();
                     // Skip Meta section for body rendering
                     if (lowerK.includes('meta')) return false;
                     return keywords.some(w => lowerK.includes(w.toLowerCase()));
                 });
-                return key ? renderTokens(sections[key]) : '';
+                if (!key) return '';
+                return useGrouping ? renderSectionWithGrouping(sections[key]) : renderTokens(sections[key]);
             };
 
             // 3. Extract Specific Sections (Robust Matching)
@@ -175,8 +199,8 @@ async function build() {
 
             const traitsHtml = findSectionHtml(['Trait', '特質']);
             const skillsHtml = findSectionHtml(['Skill', '技能', '專業']);
-            const workHtml = findSectionHtml(['Work', 'Experience', '經歷', '履歷']);
-            const educationHtml = findSectionHtml(['Education', '學歷']);
+            const workHtml = findSectionHtml(['Work', 'Experience', '經歷', '履歷'], true);
+            const educationHtml = findSectionHtml(['Education', '學歷'], true);
 
 
             // --- Name Processing ---
@@ -299,7 +323,7 @@ async function build() {
                         <!-- Separator Line (Restored) -->
                         <div class="w-full h-0.5 bg-slate-800 mt-4 mb-6"></div>
 
-                        <div class="text-base text-slate-600 leading-relaxed mb-6">
+                        <div class="text-base text-slate-600 leading-relaxed mb-6 break-inside-avoid">
                             ${data.summaryContent}
                         </div>
 
@@ -357,7 +381,7 @@ async function build() {
                                 <div class="w-6 h-1 bg-slate-400"></div>
                                 <h2 class="text-lg font-bold text-slate-700 tracking-widest uppercase" data-i18n="skills">${labels[lang].skills}</h2>
                             </div>
-                            <div class="markdown-content sidebar-content">
+                            <div class="markdown-content sidebar-content break-inside-avoid">
                                 ${data.skillsContent}
                             </div>
                         </section>
@@ -455,6 +479,17 @@ async function build() {
                                                     h1, h2, h3, p, li {
                                                         color: #000 !important;
                                                     }
+                                                }
+
+                                                /* Page Break Controls */
+                                                .break-inside-avoid {
+                                                    break-inside: avoid;
+                                                    page-break-inside: avoid;
+                                                }
+                                                /* Sidebar List Integrity */
+                                                .sidebar-content li {
+                                                    break-inside: avoid;
+                                                    page-break-inside: avoid;
                                                 }
                                             </style>
                                         </head>
