@@ -153,7 +153,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 ## Summary
 > **Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industries**
 >
-> Experienced in 0-to-1 product development, capable of leading cross-functional teams of 10+. Consistently driving **Full Lifecycle Management**, from requirements gathering, scope definition, and spec writing, to R&D scheduling, UAT, and product delivery.
+> Good at 0-to-1 product building. Led teams of 10+ people. Skilled in Full Product Lifecycle: from gathering needs, writing specs, to scheduling, testing, and delivery
 
 ---
 
@@ -210,8 +210,8 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - Coordinated cross-department collaboration and schedule control.
 - **Core Achievements**:
   - **AI Workflow Implementation**: Established **Agentic Workflows** to assist development, significantly improving **spec accuracy and cross-department alignment**, reducing communication costs.
-  - **Social Ecosystem (0 to 1)**: Led the **0-to-1 MVP development over 6 months**, delivering multiple key iterations covering content publishing, interaction systems, auto/media moderation, and data monitoring.
-  - **Growth & Incentives Optimization**: Designed and optimized Red Packet systems (auto-claim, batch settings, wager logic) and auto-join invitation mechanisms.
+  - **Social Ecosystem (0 to 1)**: Led the **0-to-1 MVP development over 6 months**, delivering multiple key iterations covering content publishing, interaction systems, auto review, and data monitoring.
+  - **Growth & Incentives Optimization**: Designed and optimized Red Packet systems (auto-claim, batch settings, Rebate) and auto-join invitation mechanisms.
   - **Cross-Platform & UX**: Implemented deep mobile web (mWeb) integration, optimizing visitor mode and external share flows.
   - **Globalization & Infrastructure**: Built multi-language framework; managed custom development for India IM version and 3rd-party login integration.
   - **Video/Audio Features**: Voice/File message transmission features.
@@ -220,12 +220,12 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 *2022/06 ~ 2023/12*
 - **Project**: Blockchain Video Sharing Platform.
 - **Key Responsibilities**:
-  - Authored comprehensive technical specifications in English to ensure precise technical alignment.
+  - Wrote full specs in English to ensure precise technical alignment.
   - Managed requirements directly with US clients and coordinated a multi-national development team entirely in English.
   - Designed frontend/backend functions, systems, and UI/UX.
 - **Core Achievements**:
   - **Rapid 0-to-1 Launch**: Completed product development and launch within **2 months**, followed by continuous iterations.
-  - **Agile Process Implementation**: Led an **11-person team** to establish Agile processes, enhancing delivery predictability.
+  - **Agile Process Implementation**: Led an **11-person team** to establish Agile processes, improving delivery.
 
 ### Product Manager | Paradise-Soft [📄 SPEC Work](https://drive.google.com/drive/folders/1AxxQoibuQi69h_BCw19_dfmWuy7MhXCd?usp=sharing)
 *2021/03 ~ 2022/06*
@@ -234,7 +234,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - Conducted requirement interviews with clients and departments.
   - Planned and designed platform functions, systems, and UI/UX.
 - **Core Achievements**:
-  - **Fintech & Crypto Implementation**: Designed **USDT deposit/withdrawal** and **crypto wallet binding flows**.
+  - **Crypto Implementation**: Designed **USDT deposit/withdrawal** and **crypto wallet binding flows**.
   - **Architectural Design**: Planned **Multi-language Framework** and established **Key Naming Conventions**.
   - **Live Operations**: Resolved production issues to ensure platform stability.
 
