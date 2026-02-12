@@ -129,7 +129,7 @@
 /
 ├── resume.md           # [Data] 履歷內容源文件
 ├── index.html          # [Output] 生成的靜態網頁 (Do not edit manually)
-├── SPEC_DRAFT.md       # [Spec] 專案規格書
+├── SPEC.md       # [Spec] 專案規格書
 ├── package.json        # [Config] 專案依賴與腳本
 │
 ├── scripts/
