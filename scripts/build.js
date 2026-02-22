@@ -36,6 +36,7 @@ async function build() {
          * @property {string} traitsContent - Characteristics section HTML.
          * @property {string} skillsContent - Skills list HTML.
          * @property {string} workContent - Work experience HTML.
+         * @property {string} projectContent - Side projects HTML.
          * @property {string} educationContent - Education HTML.
          * @property {string} marginClass - CSS class for print margins.
          */
@@ -200,6 +201,7 @@ async function build() {
             const traitsHtml = findSectionHtml(['Trait', '特質']);
             const skillsHtml = findSectionHtml(['Skill', '技能', '專業']);
             const workHtml = findSectionHtml(['Work', 'Experience', '經歷', '履歷'], true);
+            const projectHtml = findSectionHtml(['Project', 'Side Project', '個人專案', '專案'], true);
             const educationHtml = findSectionHtml(['Education', '學歷'], true);
 
 
@@ -251,6 +253,7 @@ async function build() {
                 traitsContent: traitsHtml,
                 skillsContent: skillsHtml,
                 workContent: workHtml,
+                projectContent: projectHtml,
                 educationContent: educationHtml,
                 marginClass,
                 ogTitle,
@@ -266,6 +269,7 @@ async function build() {
         const labels = {
             zh: {
                 work: "工作經歷",
+                project: "個人專案",
                 traits_title: "", // No title in original
                 skills: "核心技能",
                 education: "學歷",
@@ -273,6 +277,7 @@ async function build() {
             },
             en: {
                 work: "Work Experience",
+                project: "Side Projects",
                 traits_title: "",
                 skills: "Skills",
                 education: "Education",
@@ -345,6 +350,19 @@ async function build() {
                                 ${data.workContent}
                             </div>
                         </section>
+
+                        ${data.projectContent ? `
+                        <section class="mt-12 print:mt-6">
+                            <div class="flex items-center gap-3 mb-8 print:mb-4">
+                                <div class="w-8 h-1 bg-slate-800"></div>
+                                <h2 class="text-xl font-bold text-slate-800 tracking-widest uppercase" data-i18n="project">${labels[lang].project}</h2>
+                            </div>
+
+                            <div class="timeline-line pl-8 markdown-content print:pl-4">
+                                ${data.projectContent}
+                            </div>
+                        </section>
+                        ` : ''}
 
                         <section class="mt-12 print:mt-6">
                             <div class="flex items-center gap-3 mb-8 print:mb-4">

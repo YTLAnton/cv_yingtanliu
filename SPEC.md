@@ -44,6 +44,7 @@
 | :--- | :--- | :--- |
 | **Header** | (Before First H1/H2) | 姓名、職稱、摘要 (Blockquote)、聯絡資訊 (List) |
 | **Work** | Work, Experience, 經歷, 履歷 | 工作經驗 (時間軸樣式) |
+| **Projects** | Project, Side Project, 專案, 個人專案 | 獨立開發專案或 Side Project 經驗 |
 | **Education** | Education, 學歷 | 學歷資訊 |
 | **Skills** | Skill, 技能, 專業 | 側邊欄技能列表 |
 | **Traits** | Trait, 特質 | 側邊欄特質標籤 |

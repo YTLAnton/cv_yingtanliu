@@ -142,6 +142,21 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 
 ---
 
+## 個人專案
+
+### AAABAO：AI 輔助開發之記帳與分帳 PWA [🔗](https://aaabao.zeabur.app/)
+*2026*
+- **專案簡介**: 運用 AI Agent (Antigravity & Claude Code) 獨立完成從 0 到 1 需求規劃、UI/UX 設計與全端開發的「智慧記帳分帳」應用程式。
+- **PM 核心亮點與產品特色**:
+  - **AI 驅動開發實踐**：跳脫傳統開發流程，透過設計標準化的 Prompt 與 AI Agent 技能，指揮 AI 進行原子化開發。成功單人模擬跨職能團隊，獨立完成複雜的分帳業務邏輯與前端介面。
+  - **規格驅動與範圍控管**：以規格驅動開發為核心，在指派 AI 撰寫程式碼前，先仔細並詳盡地定義規格文件，收斂 MVP 範圍。避免 AI 產生無效迭代，確保產出高度對齊需求目標。
+  - **痛點解決**：洞察多人出遊、聚餐或同住等場景中，「誰先代墊、誰又欠誰」以及「他人代墊自己沒有紀錄」的混亂痛點，設計「多幣別債務矩陣」底層引擎。將複雜的雙向與多層欠款，自動收斂為單一結算數字與結清按鈕，並同步參與者的記帳，大幅降低用戶之間對於分帳與對帳的重工負擔。
+  - **AI 賦能體驗**：判斷「行動端打字繁瑣」是用戶放棄記帳的最大痛點，實作「語音辨識記帳」與「收據辨識記帳」。運用 LLM 解析非結構化數據自動填寫表單，並設計「反推驗算機制」防堵 AI 金額辨識錯誤，提升產品的方便性與留存率。
+  - **技術與商業折衷**：低維運架構選擇：以極低維運成本為考量，捨棄雙平台 App 審核時間，選擇 PWA 架構。透過 Zeabur 建立雙層分離部署，在近乎零伺服器成本的前提下，實現極速載入與跨裝置的體驗。
+  - **品質把關**：透過 AI 生成超過 200 個 Vitest 與 Playwright 測試案例（覆蓋率達 92%），並導入 17 層架構自動檢核，確保高速迭代下核心金額計算準確。
+
+---
+
 ## 學歷
 - **機械與電腦輔助工程學系** | 逢甲大學 (2010/09 - 2012/02)
   - **經歷**：創立桌上遊戲研習社
@@ -282,6 +297,21 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **"Kung Qian Ren Wu"**: Independently designed. Rights purchased by Homosapiens Lab.
   - **"Honey Moo"**: Commissioned by National Ilan University. Rights purchased by Swan Panasia for global release.
   - **"Long Hou Da"**: Commissioned by Zeng Tou Design as a CNY Gift Set and published.
+
+---
+
+## Side Projects
+
+### AAABAO: AI-Assisted Dev for Shared Expense Tracker PWA [🔗 Web App](https://aaabao.zeabur.app/)
+*2026*
+- **Project**: Designed and developed "AAABAO," an intelligent accounting and bill-splitting application, owning the 0-to-1 process from requirement planning, UI/UX design, to full-stack development using AI Agents (Antigravity & Claude Code).
+- **Core Highlights & Product Features**:
+  - **AI-Driven Execution**: Bypassed traditional development workflows by leveraging standardized Prompts and AI Agent skills for atomic development. Successfully simulated a cross-functional team, independently implementing complex business logic and frontend interfaces.
+  - **Spec-Driven Scope Control**: Adopted a spec-driven development core. Defined comprehensive specification documents to strictly scope the MVP before assigning coding tasks to AI, eliminating redundant AI iterations and ensuring precise alignment with product goals.
+  - **Pain-Point Resolution (Multi-Currency Debt Matrix)**: Addressed the chaotic scenarios of group travels and shared living arrangements where tracking "who paid what, and who owes whom" becomes a hassle. Designed an underlying "Multi-Currency Debt Matrix" engine that automatically consolidates complex, multi-layered debts into a single settlement figure and clearing button. Synchronized data across participants, drastically reducing the friction and duplicate efforts of manual reconciliation.
+  - **AI-Empowered UX**: Identified "manual typing on mobile" as the primary friction point causing churn in accounting apps. Implemented "Voice-to-Expense" and "Receipt Scanning" features, utilizing LLMs to parse unstructured data and auto-fill forms. Designed a "Reverse Verification Mechanism" to prevent AI hallucination in amount recognition, significantly enhancing convenience and user retention.
+  - **Technical & Business Trade-offs**: Prioritized an ultra-low maintenance architecture. Selected a PWA (Progressive Web App) framework to bypass App Store review bottlenecks. Established a decoupled deployment via Zeabur to achieve high-speed loading and cross-device compatibility at near-zero server costs.
+  - **Quality Assurance**: Directed AI to generate over 200 Vitest and Playwright test cases (achieving 92% coverage). Implemented a 17-layer automated validation architecture to ensure absolute reliability in core financial calculations during rapid iterations.
 
 ---
 
