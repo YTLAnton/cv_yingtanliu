@@ -1,5 +1,7 @@
 # CV Generator Project Specification
 
+執行指令：`node scripts/build.js`
+
 ## 1. 專案概述 (Project Overview)
 本專案為一個 **Markdown-to-HTML 履歷生成器**。旨在透過單一 Markdown 數據源 (`resume.md`)，自動生成具備 **響應式設計 (RWD)**、**雙語系切換 (One-Click Switch)** 與 **列印最佳化 (Print Optimized)** 的靜態履歷網頁。
 

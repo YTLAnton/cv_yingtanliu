@@ -107,7 +107,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **營運自動化**：導入 **自動返水、郵箱驗證**，提升運維效率與帳戶安全。
   - **產品增長與變現**：規劃 **iOS IAP、MTT 排行榜與 SpinUp 玩法**，提升轉換與營收。
 
-### 遊戲企劃 | 存樂科技 (成都)
+### 遊戲製作人 | 存樂科技 (成都)
 *2016/03 ~ 2019/09*
 - **專案簡介**: 獨立手遊與實體桌遊開發。
 - **關鍵責任**:
@@ -128,7 +128,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 - **核心成就**:
   - **遊戲系統設計**：主導每日任務系統、麻將獎金賽與推幣機遊戲之規劃設計。
 
-### 桌上遊戲設計師 | 自接設計
+### 桌上遊戲設計師 | 獨立設計師
 *2012/12 ~ 至今*
 - **關鍵責任**:
   - 與客戶、編輯、美術溝通討論桌遊設計。
@@ -144,7 +144,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 
 ## 個人專案
 
-### AAABAO：AI 輔助開發之記帳與分帳 PWA [🔗](https://aaabao.zeabur.app/)
+### AAABAO：AI 輔助開發之記帳與分帳 PWA [🔗](https://aaabao.vercel.app/)
 *2026*
 - **專案簡介**: 運用 AI Agent (Antigravity & Claude Code) 獨立完成從 0 到 1 需求規劃、UI/UX 設計與全端開發的「智慧記帳分帳」應用程式。
 - **PM 核心亮點與產品特色**:
@@ -152,7 +152,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **規格驅動與範圍控管**：以規格驅動開發為核心，在指派 AI 撰寫程式碼前，先仔細並詳盡地定義規格文件，收斂 MVP 範圍。避免 AI 產生無效迭代，確保產出高度對齊需求目標。
   - **痛點解決**：洞察多人出遊、聚餐或同住等場景中，「誰先代墊、誰又欠誰」以及「他人代墊自己沒有紀錄」的混亂痛點，設計「多幣別債務矩陣」底層引擎。將複雜的雙向與多層欠款，自動收斂為單一結算數字與結清按鈕，並同步參與者的記帳，大幅降低用戶之間對於分帳與對帳的重工負擔。
   - **AI 賦能體驗**：判斷「行動端打字繁瑣」是用戶放棄記帳的最大痛點，實作「語音辨識記帳」與「收據辨識記帳」。運用 LLM 解析非結構化數據自動填寫表單，並設計「反推驗算機制」防堵 AI 金額辨識錯誤，提升產品的方便性與留存率。
-  - **技術與商業折衷**：低維運架構選擇：以極低維運成本為考量，捨棄雙平台 App 審核時間，選擇 PWA 架構。透過 Zeabur 建立雙層分離部署，在近乎零伺服器成本的前提下，實現極速載入與跨裝置的體驗。
+  - **技術與商業折衷**：低維運架構選擇：以極低維運成本為考量，捨棄雙平台 App 審核時間，選擇 PWA 架構。採取前後端分離部署（前端部署於 Vercel，後端部署於 Google Cloud Run），在極低伺服器成本的前提下，實現極速載入與跨裝置的體驗。
   - **品質把關**：透過 AI 生成超過 200 個 Vitest 與 Playwright 測試案例（覆蓋率達 92%），並導入 17 層架構自動檢核，確保高速迭代下核心金額計算準確。
 
 ---
@@ -265,7 +265,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **Operations Automation**: Implemented **Auto Rebate, KYC systems, and Email Verification** to enhance efficiency and security.
   - **Growth & Revenue**: Planned **iOS IAP, MTT Leaderboards, and SpinUp modes**, optimizing revenue flows.
 
-### Game Designer | Chengdu Cunle Technology
+### Game Producer | Chengdu Cunle Technology
 *2016/03 ~ 2019/09*
 - **Project**: Indie Mobile Games & Board Game Development.
 - **Key Responsibilities**:
@@ -286,7 +286,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 - **Core Achievements**:
   - **Game System Design**: Led the design of Daily Missions, Mahjong Tournament Systems, and Coin Pusher games.
 
-### Board Game Designer | Freelance
+### Board Game Designer | Independent Designer
 *2012/12 ~ Present*
 - **Key Responsibilities**:
   - Collaborated with editors, publishers, artists, and clients on game design.
@@ -302,7 +302,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 
 ## Side Projects
 
-### AAABAO: AI-Assisted Dev for Shared Expense Tracker PWA [🔗 Web App](https://aaabao.zeabur.app/)
+### AAABAO: AI-Assisted Dev for Shared Expense Tracker PWA [🔗 Web App](https://aaabao.vercel.app/)
 *2026*
 - **Project**: Designed and developed "AAABAO," an intelligent accounting and bill-splitting application, owning the 0-to-1 process from requirement planning, UI/UX design, to full-stack development using AI Agents (Antigravity & Claude Code).
 - **Core Highlights & Product Features**:
@@ -310,7 +310,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **Spec-Driven Scope Control**: Adopted a spec-driven development core. Defined comprehensive specification documents to strictly scope the MVP before assigning coding tasks to AI, eliminating redundant AI iterations and ensuring precise alignment with product goals.
   - **Pain-Point Resolution (Multi-Currency Debt Matrix)**: Addressed the chaotic scenarios of group travels and shared living arrangements where tracking "who paid what, and who owes whom" becomes a hassle. Designed an underlying "Multi-Currency Debt Matrix" engine that automatically consolidates complex, multi-layered debts into a single settlement figure and clearing button. Synchronized data across participants, drastically reducing the friction and duplicate efforts of manual reconciliation.
   - **AI-Empowered UX**: Identified "manual typing on mobile" as the primary friction point causing churn in accounting apps. Implemented "Voice-to-Expense" and "Receipt Scanning" features, utilizing LLMs to parse unstructured data and auto-fill forms. Designed a "Reverse Verification Mechanism" to prevent AI hallucination in amount recognition, significantly enhancing convenience and user retention.
-  - **Technical & Business Trade-offs**: Prioritized an ultra-low maintenance architecture. Selected a PWA (Progressive Web App) framework to bypass App Store review bottlenecks. Established a decoupled deployment via Zeabur to achieve high-speed loading and cross-device compatibility at near-zero server costs.
+  - **Technical & Business Trade-offs**: Prioritized an ultra-low maintenance architecture. Selected a PWA (Progressive Web App) framework to bypass App Store review bottlenecks. Established a decoupled deployment framework (Frontend on Vercel, Backend on Google Cloud Run) to achieve high-speed loading and cross-device compatibility at low server costs.
   - **Quality Assurance**: Directed AI to generate over 200 Vitest and Playwright test cases (achieving 92% coverage). Implemented a 17-layer automated validation architecture to ensure absolute reliability in core financial calculations during rapid iterations.
 
 ---
