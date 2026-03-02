@@ -166,7 +166,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 # Ying-Tan Liu (Anton)
 
 ## Summary
-> **Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industries**
+> **Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Apps**
 >
 > Good at 0-to-1 product building. Led teams of 10+ people. Skilled in Full Product Lifecycle: from gathering needs, writing specs, to scheduling, testing, and delivery
 
@@ -216,102 +216,79 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 
 ## Work Experience
 
-### Product Manager | Shunwei Information [📄 SPEC Work](https://drive.google.com/drive/folders/19gxjmY17MP6XazYhs6U_KrJiRNLdRMym?usp=drive_link)
+### Product Manager | Shunwei Info [📄 SPEC Work](https://drive.google.com/drive/folders/19gxjmY17MP6XazYhs6U_KrJiRNLdRMym?usp=drive_link)
 *2024/03 ~ Present*
 - **Project**: Video Social Communication App.
-- **Key Responsibilities**:
-  - Conducted requirement interviews with management and clients, translating business logic.
-  - Planned frontend/backend system functions.
-  - Coordinated cross-department collaboration and schedule control.
+- **Key Responsibilities**: Gathered user needs, planned front/backend, and managed team schedules.
 - **Core Achievements**:
-  - **AI Workflow Implementation**: Established **Agentic Workflows** to assist development, significantly improving **spec accuracy and cross-department alignment**, reducing communication costs.
-  - **Social Ecosystem (0 to 1)**: Led the **0-to-1 MVP development over 6 months**, delivering multiple key iterations covering content publishing, interaction systems, auto review, and data monitoring.
-  - **Growth & Incentives Optimization**: Designed and optimized Red Packet systems (auto-claim, batch settings, Rebate) and auto-join invitation mechanisms.
-  - **Cross-Platform & UX**: Implemented deep mobile web (mWeb) integration, optimizing visitor mode and external share flows.
-  - **Globalization & Infrastructure**: Built multi-language framework; managed custom development for India IM version and 3rd-party login integration.
-  - **Video/Audio Features**: Voice/File message transmission features.
+  - **AI Flow**: Added AI to help write docs, making team talks clearer and faster.
+  - **0-to-1 Build**: Launched the MVP in 6 months, including posts, chats, and data checks.
+  - **User Growth**: Improved Red Packet (money gift) and auto-join flows to get more users.
+  - **Global**: Set up multi-language code and managed the India app version.
 
 ### Project Manager | 4i Tech [📄 SPEC Work](https://drive.google.com/drive/folders/1UQYY6M-sHbzn8NvVxQ22ktsh3qfwQS6j?usp=sharing)
 *2022/06 ~ 2023/12*
 - **Project**: Blockchain Video Sharing Platform.
-- **Key Responsibilities**:
-  - Wrote full specs in English to ensure precise technical alignment.
-  - Managed requirements directly with US clients and coordinated a multi-national development team entirely in English.
-  - Designed frontend/backend functions, systems, and UI/UX.
+- **Key Responsibilities**: Wrote English specs, worked with US clients, and planned UI/UX and systems.
 - **Core Achievements**:
-  - **Rapid 0-to-1 Launch**: Completed product development and launch within **2 months**, followed by continuous iterations.
-  - **Agile Process Implementation**: Led an **11-person team** to establish Agile processes, improving delivery.
+  - **Fast Launch**: Built and launched the product from 0-to-1 in just 2 months.
+  - **Agile Team**: Led an 11-person team to start Agile flows, speeding up work delivery.
 
 ### Product Manager | Paradise-Soft [📄 SPEC Work](https://drive.google.com/drive/folders/1AxxQoibuQi69h_BCw19_dfmWuy7MhXCd?usp=sharing)
 *2021/03 ~ 2022/06*
-- **Project**: Online Entertainment Platform Development.
-- **Key Responsibilities**:
-  - Conducted requirement interviews with clients and departments.
-  - Planned and designed platform functions, systems, and UI/UX.
+- **Project**: Online Entertainment Platform.
+- **Key Responsibilities**: Talked to clients for needs, and designed system features and UI/UX.
 - **Core Achievements**:
-  - **Crypto Implementation**: Designed **USDT deposit/withdrawal** and **crypto wallet binding flows**.
-  - **Architectural Design**: Planned **Multi-language Framework** and established **Key Naming Conventions**.
-  - **Live Operations**: Resolved production issues to ensure platform stability.
+  - **Crypto Payments**: Built **USDT in/out** flows and crypto wallet linking.
+  - **Structure**: Made a multi-language setup and set naming rules for keys.
+  - **Stable Run**: Solved live issues quickly to keep the platform running well.
 
 ### Product Manager | Rainbow Tech Limited [📄 SPEC Work](https://drive.google.com/drive/folders/1_Vh7ZncdjpK5LlQsoAqB9h5HLWYL1pTg?usp=sharing)
 *2019/11 ~ 2021/01*
-- **Project**: Texas Hold'em Platform Globalization.
-- **Key Responsibilities**:
-  - Conducted requirement interviews with executives and departments.
-  - Researched, planned, and designed platform functions, systems, and UI/UX.
-  - Defined development schedules.
+- **Project**: Global Texas Hold'em Platform.
+- **Key Responsibilities**: Talked to teams, planned system features, designed UI/UX, and set timelines.
 - **Core Achievements**:
-  - **International Compliance**: Secured **Isle of Man** license to legalize global platform operations.
-  - **Operations Automation**: Implemented **Auto Rebate, KYC systems, and Email Verification** to enhance efficiency and security.
-  - **Growth & Revenue**: Planned **iOS IAP, MTT Leaderboards, and SpinUp modes**, optimizing revenue flows.
+  - **Global Route**: Got the **Isle of Man** license to run the game legally worldwide.
+  - **Auto Systems**: Setup auto user checks (KYC) and auto-rebate for better testing and safety.
+  - **More Income**: Launched iOS IAP, leaderboards, and SpinUp modes to make more money.
 
 ### Game Producer | Chengdu Cunle Technology
 *2016/03 ~ 2019/09*
-- **Project**: Indie Mobile Games & Board Game Development.
-- **Key Responsibilities**:
-  - Communicated product vision with CEO and departments; tracked development and testing.
-  - Researched, planned, and designed game functions, systems, and UI/UX.
+- **Project**: Mobile Games & Board Games.
+- **Key Responsibilities**: Discussed plans with CEO, designed game systems, and tracked dev progress.
 - **Core Achievements**:
-  - **Chart-Topping Title**: Sole Lead Designer for "29 Days", reaching #1 on Hong Kong Paid Games Chart.
-  - **Casual Game Design**: Designed casual games like "Shoot n Merge" and "Sum n Merge".
-  - **Board Game Design & Publication**: Led planning for "YouTuber" and "City of Forgotten", driving international release and exhibiting at Essen Spiel 2018.
-  - **Team Leadership**: Led a **10-person development team** to ensure smooth development and testing processes.
+  - **#1 Game**: Lead Designer for "29 Days" (reached **#1 Paid Game** in Hong Kong).
+  - **Many Titles**: Designed mobile games ("Shoot n Merge") and board games ("YouTuber").
+  - **Team Leader**: Led **10 team members** to finish dev and test jobs smoothly.
 
 ### Game Designer | BonusWinner Entertainment
 *2014/08 ~ 2016/02*
-- **Project**: Casual Online Entertainment Platform.
-- **Key Responsibilities**:
-  - Conducted requirement interviews with executives and departments.
-  - Researched, planned, and designed casual entertainment platform functions, systems, and UI/UX.
+- **Project**: Casual Online Games Platform.
+- **Key Responsibilities**: Gathered needs, and designed game rules and UI/UX.
 - **Core Achievements**:
-  - **Game System Design**: Led the design of Daily Missions, Mahjong Tournament Systems, and Coin Pusher games.
+  - **System Design**: Planned Daily Missions, Mahjong rules, and Coin push games.
 
 ### Board Game Designer | Independent Designer
 *2012/12 ~ Present*
-- **Key Responsibilities**:
-  - Collaborated with editors, publishers, artists, and clients on game design.
-  - Designed rules, systems, logic, and UI/UX; managed crowdfunding campaigns.
+- **Key Responsibilities**: Worked with publishers, designed game rules, and ran crowdfunding.
 - **Board Game Titles**:
-  - **"Foot Guess"**: Independently designed. Rights purchased by **Swan Panasia** for global multi-language release.
-  - **"Office 21"**: Co-designed, published, and managed crowdfunding. Rights purchased by Swan Panasia for global release.
-  - **"Kung Qian Ren Wu"**: Independently designed. Rights purchased by Homosapiens Lab.
-  - **"Honey Moo"**: Commissioned by National Ilan University. Rights purchased by Swan Panasia for global release.
-  - **"Long Hou Da"**: Commissioned by Zeng Tou Design as a CNY Gift Set and published.
+  - **Global Sales**: Designed "How Many?", "Office 21", and "Honey Moo" (All sold to **Swan Panasia** for global release).
+  - **Other Games**: Made "Falling Coin" and "LONG" for different clients.
 
 ---
 
 ## Side Projects
 
-### AAABAO: AI-Assisted Dev for Shared Expense Tracker PWA [🔗 Web App](https://aaabao.vercel.app/)
+### AAABAO: AI Expense Tracker App [🔗 Web App](https://aaabao.vercel.app/)
 *2026*
-- **Project**: Designed and developed "AAABAO," an intelligent accounting and bill-splitting application, owning the 0-to-1 process from requirement planning, UI/UX design, to full-stack development using AI Agents (Antigravity & Claude Code).
+- **Project**: Designed and built "AAABAO", a smart bill-splitting app. Owned the 0-to-1 process from needs to UI/UX and full-stack dev using AI Agents.
 - **Core Highlights & Product Features**:
-  - **AI-Driven Execution**: Bypassed traditional development workflows by leveraging standardized Prompts and AI Agent skills for atomic development. Successfully simulated a cross-functional team, independently implementing complex business logic and frontend interfaces.
-  - **Spec-Driven Scope Control**: Adopted a spec-driven development core. Defined comprehensive specification documents to strictly scope the MVP before assigning coding tasks to AI, eliminating redundant AI iterations and ensuring precise alignment with product goals.
-  - **Pain-Point Resolution (Multi-Currency Debt Matrix)**: Addressed the chaotic scenarios of group travels and shared living arrangements where tracking "who paid what, and who owes whom" becomes a hassle. Designed an underlying "Multi-Currency Debt Matrix" engine that automatically consolidates complex, multi-layered debts into a single settlement figure and clearing button. Synchronized data across participants, drastically reducing the friction and duplicate efforts of manual reconciliation.
-  - **AI-Empowered UX**: Identified "manual typing on mobile" as the primary friction point causing churn in accounting apps. Implemented "Voice-to-Expense" and "Receipt Scanning" features, utilizing LLMs to parse unstructured data and auto-fill forms. Designed a "Reverse Verification Mechanism" to prevent AI hallucination in amount recognition, significantly enhancing convenience and user retention.
-  - **Technical & Business Trade-offs**: Prioritized an ultra-low maintenance architecture. Selected a PWA (Progressive Web App) framework to bypass App Store review bottlenecks. Established a decoupled deployment framework (Frontend on Vercel, Backend on Google Cloud Run) to achieve high-speed loading and cross-device compatibility at low server costs.
-  - **Quality Assurance**: Directed AI to generate over 200 Vitest and Playwright test cases (achieving 92% coverage). Implemented a 17-layer automated validation architecture to ensure absolute reliability in core financial calculations during rapid iterations.
+  - **AI-Driven Dev**: Used AI prompts to build the app, working like a full team to write complex code and UI on my own.
+  - **Spec Scope Control**: Wrote clear specs to define the MVP before asking AI to code, so the AI hits the goal without waste.
+  - **Smart Debt Split**: Solved the pain of messy group trips. Built a "Debt Matrix" that turns complex debts into one simple number to pay.
+  - **AI UX**: Added "Voice" and "Receipt Scan" logs using AI to save typing time, with safe checks to prevent AI money math errors.
+  - **Tech Trade-offs**: Chose PWA and Serverless (Vercel + Google Cloud Run) for fast launch, low cost, and no App Store wait time.
+  - **Quality Tests**: Guided AI to write over 200 tests (92% hit rate) and added auto-checks to ensure money math is always right.
 
 ---
 
