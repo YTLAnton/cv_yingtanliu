@@ -287,7 +287,6 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **Smart Debt Split**: Solved the pain of messy group trips. Built a "Debt Matrix" that turns complex debts into one simple number to pay.
   - **AI UX**: Added "Voice" and "Receipt Scan" logs using AI to save typing time, with safe checks to prevent AI money math errors.
   - **Tech Trade-offs**: Chose PWA and Serverless (Vercel + Google Cloud Run) for fast launch, low cost, and no App Store wait time.
-  - **Quality Tests**: Guided AI to write over 200 tests (92% hit rate) and added auto-checks to ensure money math is always right.
 
 ---
 
