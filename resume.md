@@ -59,7 +59,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 ## 工作經歷
 
 ### 產品經理 | 順為信息 [📄 SPEC 作品](https://drive.google.com/drive/folders/19gxjmY17MP6XazYhs6U_KrJiRNLdRMym?usp=drive_link)
-*2024/03 ~ 至今*
+*2024/03 ~ 2026/07*
 - **專案簡介**: 影音社交通訊軟體。
 - **關鍵責任**:
   - 與主管及客戶進行需求訪談，轉化業務邏輯。
@@ -216,7 +216,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 ## Work Experience
 
 ### Product Manager | Shunwei Info [📄 SPEC Work](https://drive.google.com/drive/folders/19gxjmY17MP6XazYhs6U_KrJiRNLdRMym?usp=drive_link)
-*2024/03 ~ Present*
+*2024/03 ~ 2026/07*
 - **Project**: Video Social Communication App.
 - **Key Responsibilities**: Gathered user needs, planned front/backend, and managed team schedules.
 - **Core Achievements**:
