@@ -136,6 +136,13 @@ body {
         break-inside: auto;
     }
 
+    /* 允許經歷區塊跨頁，避免整塊被推到下一頁而在前一頁留下大片空白；
+       標題與內容的完整性由 h3 的 break-after: avoid 保護 */
+    .markdown-content>.break-inside-avoid {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
     .markdown-content li {
         break-inside: auto;
     }
@@ -152,9 +159,24 @@ body {
         break-before: auto;
     }
 
+    /* 條目標題下的日期行（h3 後第一個段落）不可與後續內容分頁，
+       避免標題＋日期被孤立在頁尾 */
+    .markdown-content h3+p {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
     /* Compact Spacing for Print */
+    .markdown-content h3 {
+        margin-top: 1rem;
+    }
+
+    .markdown-content em {
+        margin-bottom: 0.25rem;
+    }
+
     .markdown-content ul {
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
     }
 
     .markdown-content li {

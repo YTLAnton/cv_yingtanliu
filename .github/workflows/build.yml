@@ -6,26 +6,31 @@ on:
       - main
     paths:
       - 'resume.md'
-      - 'scripts/build.js'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install fs-extra marked@4
+        run: npm ci
 
       - name: Run build script
-        # 這裡根據你的截圖，指定去 scripts 資料夾執行
-        run: node scripts/build.js
+        run: npm run build
+
+      - name: Verify build output
+        run: npm run verify
 
       - name: Commit and Push changes
         run: |

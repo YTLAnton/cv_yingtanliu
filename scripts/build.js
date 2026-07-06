@@ -424,7 +424,7 @@ async function build() {
     <meta property="og:site_name" content="${zhData.primaryName}'s Resume" />
     <meta property="og:image" content="${zhData.ogImage}" />
 
-                                    <script src="https://cdn.tailwindcss.com"></script>
+                                    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
                                     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
                                         <link rel="stylesheet" href="./css/style.css">
                                             <style>
@@ -544,6 +544,7 @@ async function build() {
 
     } catch (err) {
         console.error('Build Error:', err);
+        process.exit(1);
     }
 }
 

@@ -4,13 +4,15 @@
 - **OG_Title**: 劉胤檀 (Anton Liu) - Product Manager Resume
 - **OG_Description**: 產品經理 | 10年+ 社群、遊戲與娛樂產業經驗 
 Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industries
-- **OG_Image**: https://ytlanton.github.io/cv_yingtanliu/tatoo.png
+- **OG_Image**: https://ytlanton.github.io/cv_yingtanliu/tattoo.png
 
 
 ## 摘要
 > **產品經理 | 10年+ 社群、遊戲與娛樂產業經驗**
 >
 > 具備 0 到 1 的產品開發經驗，可帶領十人以上的跨職能團隊。穩定驅動 **全生命週期管理**，從需求溝通、需求收斂、SPEC撰寫，到訂定研發時程、驗收測試與產品交付。
+>
+> 代表成果：**6 個月**完成社群系統 MVP 上線、帶領 **11 人跨國團隊**兩個月交付區塊鏈影音平台、推動平台取得**曼島政府牌照**、手遊作品榮登**香港付費榜冠軍**。
 
 ---
 
@@ -157,7 +159,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 ---
 
 ## 學歷
-- **機械與電腦輔助工程學系** | 逢甲大學 (2010/09 - 2012/02)
+- **機械與電腦輔助工程學系（肄業）** | 逢甲大學 (2010/09 - 2012/02)
   - **經歷**：創立桌上遊戲研習社
 
 <!-- LANGUAGE_SPLIT: EN -->
@@ -167,14 +169,15 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 ## Summary
 > **Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Apps**
 >
-> Good at 0-to-1 product building. Led teams of 10+ people. Skilled in Full Product Lifecycle: from gathering needs, writing specs, to scheduling, testing, and delivery
+> Experienced in 0-to-1 product building. Led cross-functional teams of 10+ people. Skilled in the full product lifecycle: from gathering needs and writing specs to scheduling, testing, and delivery.
+>
+> Key results: launched a social platform MVP in **6 months**, delivered a blockchain video platform in 2 months with an **11-person global team**, secured the **Isle of Man license**, and made a **#1 paid mobile game** in Hong Kong.
 
 ---
 
 ## Contact
 - **Phone**: +886 988 260 518
 - **Email**: [play911419@gmail.com](mailto:play911419@gmail.com)
-- **DOB**: 1990-05-18
 - **Portfolio**: [📁 SPEC Archive](https://drive.google.com/drive/folders/17gDviWNyXriZaaRw9m95mDCzMc1zSdGj?usp=sharing)
 
 ---
@@ -220,10 +223,12 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 - **Project**: Video Social Communication App.
 - **Key Responsibilities**: Gathered user needs, planned front/backend, and managed team schedules.
 - **Core Achievements**:
-  - **AI Flow**: Added AI to help write docs, making team talks clearer and faster.
-  - **0-to-1 Build**: Launched the MVP in 6 months, including posts, chats, and data checks.
-  - **User Growth**: Improved Red Packet (money gift) and auto-join flows to get more users.
-  - **Global**: Set up multi-language code and managed the India app version.
+  - **AI Flow**: Added AI to help write docs, making cross-team communication clearer and faster.
+  - **0-to-1 Build**: Launched the MVP in 6 months, including posts, interactions, content moderation, and data monitoring.
+  - **User Growth**: Improved Red Packet (money gift) and auto-join flows to drive user growth.
+  - **Cross-platform**: Brought community features to mWeb, and improved guest mode and external sharing.
+  - **Global**: Set up a multi-language framework and led the India version with third-party login.
+  - **Messaging**: Upgraded voice message and file transfer features.
 
 ### Project Manager | 4i Tech [📄 SPEC Work](https://drive.google.com/drive/folders/1UQYY6M-sHbzn8NvVxQ22ktsh3qfwQS6j?usp=sharing)
 *2022/06 ~ 2023/12*
@@ -231,25 +236,25 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 - **Key Responsibilities**: Wrote English specs, worked with US clients, and planned UI/UX and systems.
 - **Core Achievements**:
   - **Fast Launch**: Built and launched the product from 0-to-1 in just 2 months.
-  - **Agile Team**: Led an 11-person team to start Agile flows, speeding up work delivery.
+  - **Agile Team**: Led an 11-person team to set up an Agile process, shortening delivery cycles.
 
 ### Product Manager | Paradise-Soft [📄 SPEC Work](https://drive.google.com/drive/folders/1AxxQoibuQi69h_BCw19_dfmWuy7MhXCd?usp=sharing)
 *2021/03 ~ 2022/06*
 - **Project**: Online Entertainment Platform.
-- **Key Responsibilities**: Talked to clients for needs, and designed system features and UI/UX.
+- **Key Responsibilities**: Met with clients to clarify needs, and designed system features and UI/UX.
 - **Core Achievements**:
   - **Crypto Payments**: Built **USDT in/out** flows and crypto wallet linking.
-  - **Structure**: Made a multi-language setup and set naming rules for keys.
-  - **Stable Run**: Solved live issues quickly to keep the platform running well.
+  - **Architecture**: Built a multi-language framework and defined key naming rules.
+  - **Stable Run**: Solved live issues quickly to keep the platform stable.
 
 ### Product Manager | Rainbow Tech Limited [📄 SPEC Work](https://drive.google.com/drive/folders/1_Vh7ZncdjpK5LlQsoAqB9h5HLWYL1pTg?usp=sharing)
 *2019/11 ~ 2021/01*
 - **Project**: Global Texas Hold'em Platform.
-- **Key Responsibilities**: Talked to teams, planned system features, designed UI/UX, and set timelines.
+- **Key Responsibilities**: Worked with internal teams, planned system features, designed UI/UX, and set timelines.
 - **Core Achievements**:
-  - **Global Route**: Got the **Isle of Man** license to run the game legally worldwide.
-  - **Auto Systems**: Setup auto user checks (KYC) and auto-rebate for better testing and safety.
-  - **More Income**: Launched iOS IAP, leaderboards, and SpinUp modes to make more money.
+  - **Global License**: Built the KYC system and secured the **Isle of Man** license to operate legally worldwide.
+  - **Automation**: Set up auto-rebate and email verification to improve operations and account safety.
+  - **Revenue Growth**: Launched iOS IAP, MTT leaderboards, and SpinUp modes to grow conversion and revenue.
 
 ### Game Producer | Chengdu Cunle Technology
 *2016/03 ~ 2019/09*
@@ -258,21 +263,21 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 - **Core Achievements**:
   - **#1 Game**: Lead Designer for "29 Days" (reached **#1 Paid Game** in Hong Kong).
   - **Many Titles**: Designed mobile games ("Shoot n Merge") and board games ("YouTuber").
-  - **Team Leader**: Led **10 team members** to finish dev and test jobs smoothly.
+  - **Team Leader**: Led a **10-person team** to keep development and testing on track.
 
 ### Game Designer | BonusWinner Entertainment
 *2014/08 ~ 2016/02*
 - **Project**: Casual Online Games Platform.
-- **Key Responsibilities**: Gathered needs, and designed game rules and UI/UX.
+- **Key Responsibilities**: Gathered needs and designed game rules and UI/UX.
 - **Core Achievements**:
-  - **System Design**: Planned Daily Missions, Mahjong rules, and Coin push games.
+  - **System Design**: Planned daily mission systems, Mahjong bonus games, and coin pusher games.
 
 ### Board Game Designer | Independent Designer
 *2012/12 ~ Present*
 - **Key Responsibilities**: Worked with publishers, designed game rules, and ran crowdfunding.
 - **Board Game Titles**:
   - **Global Sales**: Designed "How Many?", "Office 21", and "Honey Moo" (All sold to **Swan Panasia** for global release).
-  - **Other Games**: Made "Falling Coin" and "LONG" for different clients.
+  - **Other Games**: Designed "Falling Coin" and "LONG" as client commissions.
 
 ---
 
@@ -282,14 +287,14 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 *2026*
 - **Project**: Designed and built "AAABAO", a smart bill-splitting app. Owned the 0-to-1 process from needs to UI/UX and full-stack dev using AI Agents.
 - **Core Highlights & Product Features**:
-  - **AI-Driven Dev**: Used AI prompts to build the app, working like a full team to write complex code and UI on my own.
-  - **Spec Scope Control**: Wrote clear specs to define the MVP before asking AI to code, so the AI hits the goal without waste.
-  - **Smart Debt Split**: Solved the pain of messy group trips. Built a "Debt Matrix" that turns complex debts into one simple number to pay.
-  - **AI UX**: Added "Voice" and "Receipt Scan" logs using AI to save typing time, with safe checks to prevent AI money math errors.
+  - **AI-Driven Dev**: Used standard prompts and AI agent skills to direct the AI, covering the work of a full team on my own to build complex logic and UI.
+  - **Spec Scope Control**: Wrote clear specs to define the MVP before asking AI to code, keeping AI output on target without wasted work.
+  - **Smart Debt Split**: Solved the pain of messy group trips. Built a **multi-currency "Debt Matrix"** that turns complex group debts into one simple number to settle, and syncs records for all members.
+  - **AI UX**: Added **voice** and **receipt-scan** entry using AI to cut typing effort, with a cross-check step to catch AI amount errors.
   - **Tech Trade-offs**: Chose PWA and Serverless (Vercel + Google Cloud Run) for fast launch, low cost, and no App Store wait time.
 
 ---
 
 ## Education
-- **Dept. of Mechanical and Computer-Aided Engineering, Feng Chia University** | Feng Chia University (2010/09 - 2012/02)
+- **Dept. of Mechanical and Computer-Aided Engineering (Attended)** | Feng Chia University (2010/09 - 2012/02)
   - **Experience**: Founder of Board Game Club
