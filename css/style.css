@@ -153,8 +153,11 @@ body {
         break-inside: avoid;
     }
 
+    /* 標題本身不可被分頁切成兩半（多行標題曾在頁尾被攔腰切開） */
     h2,
     h3 {
+        break-inside: avoid;
+        page-break-inside: avoid;
         break-after: avoid;
         break-before: auto;
     }
