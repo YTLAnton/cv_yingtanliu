@@ -20,6 +20,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 - **電話**: +886 988 260 518
 - **Email**: [play911419@gmail.com](mailto:play911419@gmail.com)
 - **生日**: 1990-05-18
+- **作品集**: [📁 SPEC 工作樣本（已去識別化）](https://drive.google.com/drive/folders/1xJ5FPz2DWE4CU6uj5ZWioSx3z9G9oQ2V?usp=sharing)
 
 ---
 
@@ -177,6 +178,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 ## Contact
 - **Phone**: +886 988 260 518
 - **Email**: [play911419@gmail.com](mailto:play911419@gmail.com)
+- **Portfolio**: [📁 SPEC Samples (De-identified)](https://drive.google.com/drive/folders/1xJ5FPz2DWE4CU6uj5ZWioSx3z9G9oQ2V?usp=sharing)
 
 ---
 
