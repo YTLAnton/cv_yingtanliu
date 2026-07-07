@@ -20,7 +20,6 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 - **電話**: +886 988 260 518
 - **Email**: [play911419@gmail.com](mailto:play911419@gmail.com)
 - **生日**: 1990-05-18
-- **作品集**: [📁 SPEC 作品集](https://drive.google.com/drive/folders/17gDviWNyXriZaaRw9m95mDCzMc1zSdGj?usp=sharing)
 
 ---
 
@@ -60,7 +59,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 
 ## 工作經歷
 
-### 產品經理 | 順為信息 [📄 SPEC 作品](https://drive.google.com/drive/folders/19gxjmY17MP6XazYhs6U_KrJiRNLdRMym?usp=drive_link)
+### 產品經理 | 順為信息
 *2024/03 ~ 2026/07*
 - **專案簡介**: 影音社交通訊軟體。
 - **關鍵責任**:
@@ -75,7 +74,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **全球化與多市場佈局**：建立多語系框架，負責印度版開發與三方登錄整合。
   - **影音通訊功能升級**：語音/檔案訊息傳輸功能。
 
-### 專案經理 | 我愛數位科技 [📄 SPEC 作品](https://drive.google.com/drive/folders/1UQYY6M-sHbzn8NvVxQ22ktsh3qfwQS6j?usp=sharing)
+### 專案經理 | 我愛數位科技
 *2022/06 ~ 2023/12*
 - **專案簡介**: 區塊鏈影音分享平台。
 - **關鍵責任**:
@@ -86,7 +85,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **從 0 到 1**：**2 個月**完成產品開發，上線後持續迭代。
   - **建立敏捷開發流程**：協調 **11 人團隊**，建立並實施敏捷開發流程，縮短交付週期並實現價值的持續產出。
 
-### 產品經理 | 天堂遊戲 [📄 SPEC 作品](https://drive.google.com/drive/folders/1AxxQoibuQi69h_BCw19_dfmWuy7MhXCd?usp=sharing)
+### 產品經理 | 天堂遊戲
 *2021/03 ~ 2022/06*
 - **專案簡介**: 線上娛樂平台。
 - **關鍵責任**:
@@ -97,7 +96,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **架構設計**：規劃 **多語系框架** 並制定 **Key 命名規則**。
   - **線上維運**：處理正式環境各狀況，確保平台穩定服務。
 
-### 產品經理 | 彩虹科技 [📄 SPEC 作品](https://drive.google.com/drive/folders/1_Vh7ZncdjpK5LlQsoAqB9h5HLWYL1pTg?usp=sharing)
+### 產品經理 | 彩虹科技
 *2019/11 ~ 2021/01*
 - **專案簡介**: 國際德州撲克平台。
 - **關鍵責任**:
@@ -178,7 +177,6 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 ## Contact
 - **Phone**: +886 988 260 518
 - **Email**: [play911419@gmail.com](mailto:play911419@gmail.com)
-- **Portfolio**: [📁 SPEC Archive](https://drive.google.com/drive/folders/17gDviWNyXriZaaRw9m95mDCzMc1zSdGj?usp=sharing)
 
 ---
 
@@ -218,7 +216,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
 
 ## Work Experience
 
-### Product Manager | Shunwei Info [📄 SPEC Work](https://drive.google.com/drive/folders/19gxjmY17MP6XazYhs6U_KrJiRNLdRMym?usp=drive_link)
+### Product Manager | Shunwei Info
 *2024/03 ~ 2026/07*
 - **Project**: Video Social Communication App.
 - **Key Responsibilities**: Gathered user needs, planned front/backend, and managed team schedules.
@@ -230,7 +228,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **Global**: Set up a multi-language framework and led the India version with third-party login.
   - **Messaging**: Upgraded voice message and file transfer features.
 
-### Project Manager | 4i Tech [📄 SPEC Work](https://drive.google.com/drive/folders/1UQYY6M-sHbzn8NvVxQ22ktsh3qfwQS6j?usp=sharing)
+### Project Manager | 4i Tech
 *2022/06 ~ 2023/12*
 - **Project**: Blockchain Video Sharing Platform.
 - **Key Responsibilities**: Wrote English specs, worked with US clients, and planned UI/UX and systems.
@@ -238,7 +236,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **Fast Launch**: Built and launched the product from 0-to-1 in just 2 months.
   - **Agile Team**: Led an 11-person team to set up an Agile process, shortening delivery cycles.
 
-### Product Manager | Paradise-Soft [📄 SPEC Work](https://drive.google.com/drive/folders/1AxxQoibuQi69h_BCw19_dfmWuy7MhXCd?usp=sharing)
+### Product Manager | Paradise-Soft
 *2021/03 ~ 2022/06*
 - **Project**: Online Entertainment Platform.
 - **Key Responsibilities**: Met with clients to clarify needs, and designed system features and UI/UX.
@@ -247,7 +245,7 @@ Product Manager | 10+ Years Experience in Social, Gaming & Entertainment Industr
   - **Architecture**: Built a multi-language framework and defined key naming rules.
   - **Stable Run**: Solved live issues quickly to keep the platform stable.
 
-### Product Manager | Rainbow Tech Limited [📄 SPEC Work](https://drive.google.com/drive/folders/1_Vh7ZncdjpK5LlQsoAqB9h5HLWYL1pTg?usp=sharing)
+### Product Manager | Rainbow Tech Limited
 *2019/11 ~ 2021/01*
 - **Project**: Global Texas Hold'em Platform.
 - **Key Responsibilities**: Worked with internal teams, planned system features, designed UI/UX, and set timelines.
