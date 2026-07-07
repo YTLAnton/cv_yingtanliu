@@ -20,3 +20,5 @@ build/
 # Environment Variables
 .env
 .env.local
+# 作品集原始文件（機密，永不上傳）
+portfolio/
